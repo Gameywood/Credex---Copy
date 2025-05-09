@@ -22,7 +22,16 @@ function ContactForm() {
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
 
   return (
+
+    <>
+
+     <h2 className="text-4xl sm:text-8xl bg-[#0f0f0f] font-bold text-teal-100 pt-10 text-center w-full">
+        Contact Us
+      </h2>
     <section className="min-h-screen bg-[#0f0f0f] text-white px-6 py-20 flex justify-center items-center">
+      
+      
+
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Contact Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -113,6 +122,8 @@ function ContactForm() {
 
       </div>
     </section>
+
+    </>
   );
 }
 
