@@ -22,7 +22,7 @@ const steps = [
 function HowItWorks() {
   const [isInView, setIsInView] = useState(false);
 
-  // Observer logic to detect when elements come into view
+
   const handleScroll = () => {
     const elements = document.querySelectorAll('.step');
     elements.forEach((el) => {
@@ -66,7 +66,7 @@ function HowItWorks() {
           </div>
         ))}
 
-        {/* STEP 3 - Full Width on md+ */}
+
         <div
           className={`step md:col-span-2 relative bg-gradient-to-br ${steps[2].gradient} rounded-xl overflow-hidden shadow-xl opacity-0`}
         >

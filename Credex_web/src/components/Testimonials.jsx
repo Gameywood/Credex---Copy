@@ -42,9 +42,9 @@ export default function Testimonials() {
       <h2 className="text-4xl md:text-6xl lg:text-8xl opacity-80 font-bold mb-2">CUSTOMER</h2>
       <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-widest">REVIEWS</h2>
 
-      {/* Add spacing between heading and testimonials */}
+   
       <div className="mt-8 md:mt-16 flex flex-col md:flex-row justify-center items-center gap-8 px-4">
-        {/* Left Arrow */}
+      
         <button
           onClick={handlePrev}
           className="text-white hover:text-gray-300 transition mb-4 md:mb-0 absolute left-4 md:left-0"
@@ -52,7 +52,7 @@ export default function Testimonials() {
           <ChevronLeft size={36} />
         </button>
 
-        {/* Testimonial Card */}
+
         <div className="max-w-xl md:max-w-3xl relative bg-gradient-to-br from-orange-200 via-pink-200 to-blue-200 p-10 rounded-2xl text-black">
           <p className="text- sm:text-2xl md:text-3xl lg:text-5xl italic mb-3">“{currentReview.quote}”</p>
           <div className="flex items-center justify-center gap-3">
@@ -70,7 +70,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Right Arrow */}
+  
         <button
           onClick={handleNext}
           className="text-white hover:text-gray-300 transition mb-4 md:mb-0 absolute right-4 md:right-0"

@@ -36,9 +36,9 @@ function Hero() {
         backgroundColor: '#1e293b',
       }}
     >
-      {/* Fixed logo */}
+
       <img
-        src="./src/assets/logo.png" // Update path as needed
+        src="./src/assets/logo.png" 
         alt="SoftSell Logo"
         className="md:fixed flex items-start md:top-[-30px] md:left-[-10px]  top-[-10px] left-[-10px] w-44 h-44 md:w-60 md:h-60 object-contain z-50"
       />

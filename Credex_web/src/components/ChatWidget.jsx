@@ -61,7 +61,7 @@ export default function ChatWidget() {
           </div>
         ))}
 
-        {/* Show selectable mock questions */}
+
         <div className="flex flex-wrap gap-2 mt-2">
           {mockQuestions.map((q, i) => (
             <button

@@ -33,7 +33,7 @@ function ContactForm() {
       
 
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        {/* Contact Form */}
+   
         <form onSubmit={handleSubmit} className="space-y-6">
           <h2 className="text-3xl sm:text-4xl font-semibold text-teal-100 mb-4">We're here to help</h2>
 
@@ -109,7 +109,7 @@ function ContactForm() {
           </button>
         </form>
 
-        {/* Follow Us Section */}
+
         <div className="bg-gradient-to-br from-[#1f1f1f] to-[#00ffe0]/10 rounded-2xl p-8 shadow-lg text-center">
           <h3 className="text-3xl sm:text-4xl font-bold text-teal-100 mb-4">Connect with us</h3>
           <div className="flex justify-center gap-6 sm:gap-10 text-4xl sm:text-6xl text-white">

@@ -42,9 +42,9 @@ const WhyChooseUs = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); // You can adjust this breakpoint if needed
+            setIsMobile(window.innerWidth <= 768); 
         };
-        handleResize(); // check on mount
+        handleResize(); 
         window.addEventListener('resize', handleResize);
 
         return () => window.removeEventListener('resize', handleResize);
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                             viewport={{ once: true, amount: 0.3 }}
                             variants={fadeIn}
                         >
-                            {/* Icon */}
+                  
                             <div
                                 className={`bg-gradient-to-br from-orange-200 via-pink-200 to-blue-200 p-4 md:p-6 rounded-xl shadow-lg flex items-center justify-center w-40 h-40 md:w-120 md:h-150 ${
                                     item.align === 'right' ? 'md:ml-12' : 'md:mr-12'
@@ -76,14 +76,14 @@ const WhyChooseUs = () => {
                                 <img src={item.icon} alt={item.title} className="w-20 h-20 md:w-80 md:h-80 object-contain" />
                             </div>
 
-                            {/* Text */}
+            
                             <div className="text-center md:text-center md:w-1/3 mt-4 md:mt-0">
                                 <h3 className="text-3xl md:text-8xl italic font-semibold mb-2">{item.title}</h3>
                                 <p className="text-base md:text-2xl text-gray-300 whitespace-pre-line">{item.desc}</p>
                             </div>
                         </motion.div>
 
-                        {/* Decorative arrows, explicitly hidden on mobile */}
+              
                         {index === 0 && (
                             <div className="hidden md:flex justify-center relative">
                                 <img
